@@ -1,17 +1,30 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<% request.setCharacterEncoding("utf-8"); %>
-<!DOCTYPE html> <!-- dice.jsp -->
+<!doctype html> <!-- 20190301.html -->
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-</head>
-<jsp:useBean id="dice" class="bean.user.Dice" scope="request" />
-<body>
-<h2>주사위 2번 던지기</h2>
-주사위 1 : <jsp:getProperty name="dice" property="num" /> <br/>
-주사위 2 : <jsp:getProperty name="dice" property="num" /> <br/>
-<br>
-<a href=dice.jsp> 주사위 다시 던지기 </a>
-</body>
-</html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport"content="width=device-width,initial-scale=1"/>
+  <style> 
+   [class*="col-"]{float:left;padding:10px;}/* for mobile*/
+   [class*="col-"]{ width:100%;}
+   @media only screen and (min-width: 768px){  /* For desktop:*/
+   .col-1{width:8.33%;}.col-2{width:16.66%;}.col-3{width:25%;}.col-4{width:33.33%;}
+   .col-5{width:41.66%;}.col-6{width:50%;}.col-7{width:58.33%;}.col-8{width:66.66%;}
+   .col-9{width:75%;}.col-10{width:83.33%;}.col-11{width:91.66%;}.col-12{width:100%;}}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>강호영 홈페이지</title>
+ </head>
+ <body>
+  <header></header>
+    <a href="http://203.237.142.245/~s20171331/week06/dice.jsp" target="_blank">dice.jsp</a><br>
+  <section>
+    <h4>form-search-get.html</h4><p>소스코드</p>
+    <picture>
+      <source media="(min-width:768px)"srcset="./20190601s1_big.png"/>
+      <img src="./20190601s1_small.png"alt="소스코드"style="width:auto;"/>
+    </picutre>
+    <picture>
+      <source media="(min-width:768px)"srcset="./20190601r1_big.png"/>
+      <img src="./20190601r1_small.png"alt="결과화면"style="width:auto;"/>
+    </picture>
+  </section></body></html>
